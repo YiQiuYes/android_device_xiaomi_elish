@@ -13,6 +13,9 @@ TARGET_IS_TABLET := true
 # Use prebuilt kernel
 TARGET_USE_PREBUILT_KERNEL := true
 
+# Add Gapps
+TARGET_ADD_GAPPS := true
+
 # Inherit from sm8250-common
 $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 
@@ -89,3 +92,8 @@ endif
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/elish/elish-vendor.mk)
+
+# Inherit from Gapps
+ifeq ($(TARGET_ADD_GAPPS),true)
+    $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+endif
