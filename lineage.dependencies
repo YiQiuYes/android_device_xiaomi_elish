@@ -1,10 +1,20 @@
 [
   {
-    "repository": "android_device_xiaomi_sm8250-common",
-    "target_path": "device/xiaomi/sm8250-common"
+    "remote":"github",
+    "repository": "YiQiuYes/android_device_xiaomi_sm8250-common",
+    "target_path": "device/xiaomi/sm8250-common",
+    "branch": "lineage-21-elish"
   },
   {
-    "repository": "vendor_gapps",
-    "target_path": "vendor/gapps"
+    "remote":"github",
+    "repository": "web1n/android_device_xiaomi_elish-kernel-prebuilt",
+    "target_path": "device/xiaomi/elish-prebuilt",
+    "branch": "OS1.0.2.0.TKYCNXM"
+  },
+  {
+    "remote":"gitlab",
+    "repository": "MindTheGapps/vendor_gapps",
+    "target_path": "vendor/gapps",
+    "branch": "upsilon"
   }
 ]
