@@ -11,7 +11,7 @@ TARGET_IS_VAB := true
 TARGET_IS_TABLET := true
 
 # Use prebuilt kernel
-TARGET_USE_PREBUILT_KERNEL := true
+TARGET_USE_PREBUILT_KERNEL := false
 
 # Inherit from sm8250-common
 $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
